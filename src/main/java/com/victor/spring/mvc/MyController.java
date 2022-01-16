@@ -21,4 +21,14 @@ public class MyController {
         return "show-emp-details-view";
     }
 
+    @RequestMapping("/askDetailsHome")
+    public String askClientDetails() {
+        return "ask-cl-details-view";
+    }
+
+    @RequestMapping("showDetailsHome")
+    public String showClientDetails() {
+        return "show-cl-details-view";
+    }
+
 }
