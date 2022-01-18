@@ -27,9 +27,9 @@ public class MyController {
     @RequestMapping("/showDetails")
     public String showEmpDetails(HttpServletRequest request, Model model) {
 
-        String empName = request.getParameter("employeeName");
-        empName = "Mr. " + empName;
-        model.addAttribute("nameAttribute", empName);
+        String empName = request.getParameter("employeeName"); // получаем имя работника с помощью HttpServletRequest
+        empName = "Mr. " + empName;                               // изменяем имя
+        model.addAttribute("nameAttribute", empName);          // добавляем измененное имя в качестве атрибута в модель
         model.addAttribute("description", " - snowboard instructor");
 
         return "show-emp-details-view";
