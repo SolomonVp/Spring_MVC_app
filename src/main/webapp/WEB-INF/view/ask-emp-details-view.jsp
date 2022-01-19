@@ -8,7 +8,8 @@
 <br>
 
 <form action="showDetails" method="get">
-<input type="text" name="employeeName" placeholder="Write your Name.."/>
+<input type="text" name="employeeName"
+       placeholder="Write your Name.."/>
 
     <input type="submit"/>
 
