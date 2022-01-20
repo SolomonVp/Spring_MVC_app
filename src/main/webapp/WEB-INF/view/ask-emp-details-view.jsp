@@ -14,12 +14,13 @@
     Surname    <form:input path="surname"/>          <br><br>
     Salary     <form:input path="salary"/>           <br><br>
 
-    Department <form:select path="department">
+    Department
+    <form:select path="department">
 <%--    <form:option value="Information Technology" label="IT"/>--%>
 <%--    <form:option value="Human Resources" label="HR"/>--%>
 <%--    <form:option value="Sales" label="Sales"/>--%>
     <form:options items="${employee.departments}"/>
-</form:select>                                       <br><br>
+    </form:select>                                       <br><br>
 
     Which Car do you want?
 <%--    BMW    <form:radiobutton path="carBrand" value="BMW"/>--%>
@@ -27,7 +28,15 @@
 <%--    MB     <form:radiobutton path="carBrand" value="Mercedes-Benz"/>--%>
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
 
-                                                     <br><br>
+                                                         <br><br>
+
+    Foreign Language(s):
+<%--    EN <form:checkbox path="languages" value="English"/>--%>
+<%--    FR <form:checkbox path="languages" value="Franch"/>--%>
+<%--    UK <form:checkbox path="languages" value="Ukrain"/>--%>
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
+
+                                                          <br><br>
 
     <input type="submit" value="Ok">
 
