@@ -18,6 +18,8 @@ Your Language(s):<ul>
                          <li>    ${lang}    </li>
                      </c:forEach>
                  </ul>
+Your phoneNumber:${employee.phoneNumber} <br><br>
+Your EMail:      ${employee.email}       <br><br>
 
 
 </body>
